@@ -19,3 +19,8 @@ pipenv run COMMANDS...
 
 exit # 가상환경 종료
 ```
+
+```shell
+pipenv shell # 설치 전에 쉘 키기!
+pipenv install # Pipfile에 있는 라이브러리 모두 설치
+```
