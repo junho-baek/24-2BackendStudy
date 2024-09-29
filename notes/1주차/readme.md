@@ -6,7 +6,7 @@ Welcome 디렉토리로 이동하자.
 cd Welcome
 ```
 
-uvicorn - asgi 서버를 구현해주는 프로그램. cli 명령어.
+uvicorn - asgi 서버를 구현해주는 프로그램. cli 명령어
 
 ```shell
 uvicorn main:app --port=8081 --reload
@@ -38,8 +38,11 @@ http://localhost:8081/redoc
 response 는 상태코드 콘텐트타입 등이 헤더에 추가 된다.
 
 > swaggerUI 사용법
+>
 > summary: 라우터에 대한 설명을 작성
+>
 > tags: 라우터를 태그로 분류 할 수 있음
+>
 > 함수 아래 multiline 주석: md 형식으로 라우터에 대한 docs를 정리할 수 있음.
 
 ```python
