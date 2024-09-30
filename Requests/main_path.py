@@ -13,6 +13,7 @@ async def read_item(item_id: int):
     return {"item_id": item_id}
 
 # Path parameter값과 특정 지정 Path가 충돌되지 않도록 endpoint 작성 코드 위치에 주의 
+# item_id 로 인식되지 않도록 이 라인을 app 선언 이후 바로 아래에 위치시키면 오류가 나지 않는다.
 @app.get("/items/all")
 # 수행 함수 인자로 path parameter가 입력됨. 함수 인자의 타입을 지정하여 path parameter 타입 지정.  
 async def read_all_items():
